@@ -1,0 +1,42 @@
+body{
+	line-height: 150%;
+	font-size:12px;
+}
+
+h2{font-size: 30px; line-height: 150%;}
+h3{font-size: 24px; line-height: 150%;}
+h4{font-size: 18px; line-height: 150%;}
+
+body.body-bg{background:url(../images/contents_bg.jpg); background-size: cover; color:#FFF;}
+body.body-grey{background:#eff3f8;}
+
+/* header */
+.header {background:#FFF; border-bottom: 1px solid #CCC; font-size:14px;}
+.header > .navbar{max-width: 1200px; margin:0 auto; background:#FFF; border:0;}
+.navbar-default .navbar-brand{color:#409EFF !important; font-size:30px; margin-right:20px;}
+
+/* contents common */
+.contents{max-width: 1200px; margin:0 auto; padding:20px;}
+
+/* footer */
+footer {background:#FFF; color:#777;  border-top:1px solid #CCC;}
+footer .footer{max-width: 1200px; margin:0 auto; padding:20px;}
+footer.feat{position: fixed; bottom:0; width: 100%;}
+
+.description{color:#AAA;}
+
+.user-type{max-width: 600px; margin:0 auto; color:#AAA;}
+.user-type .fas{font-size:30px; color:#67C23A;}
+
+.card ul li{padding:15px;}
+.card ul li .card-detail{position:relative; background:#FFF; box-shadow: 0 2px 3px 2px rgba(0,0,0,.03);}
+.card ul li .cnt{position: absolute; top:10px; font-size:30px; margin-bottom: 10px; padding:10px;}
+.card ul li .tit{position: absolute; bottom:0; font-size:12px; padding:10px;}
+.card ul li .h-area{height: 100px}
+.card ul li .new-menu .card-detail{background:#409EFF; color:#FFF;}
+.card ul li .card-head{font-size: 30px; line-height: 120%; padding-top:15px; text-align: right;}
+.card ul li .card-head-detail{background:#67C23A; color:#FFF;}
+
+.menuscript-form{border:1px solid #EFEFEF; padding:30px 20px; margin-top:20px; line-height: 22px}
+
+.step{text-align: center; border-bottom: 1px solid #efefef; padding-bottom: 20px; margin-bottom: 20px;}
