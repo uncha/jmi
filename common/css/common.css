@@ -1,12 +1,13 @@
-body{
-	line-height: 150%;
-	font-size:12px;
-}
-
+h1{font-size: 45px; line-height: 150%;}
 h2{font-size: 30px; line-height: 150%;}
 h3{font-size: 24px; line-height: 150%;}
 h4{font-size: 18px; line-height: 150%;}
+strong{font-weight: bold}
 
+a, a:active, a:visited, a:focus{color:#777; text-decoration: none;}
+a:hover{color:#000; text-decoration: none;}
+
+body{line-height: 150%;font-size:12px;}
 body.body-bg{background:url(../images/contents_bg.jpg); background-size: cover; color:#FFF;}
 body.body-grey{background:#eff3f8;}
 
@@ -14,6 +15,11 @@ body.body-grey{background:#eff3f8;}
 .header {background:#FFF; border-bottom: 1px solid #CCC; font-size:14px;}
 .header > .navbar{max-width: 1200px; margin:0 auto; background:#FFF; border:0;}
 .navbar-default .navbar-brand{color:#409EFF !important; font-size:30px; margin-right:20px;}
+.header > .navbar li.active > a{background-color: #409EFF !important; color:#FFF;}
+.header > .navbar li.active > a:hover{background-color: #409EFF !important; color:#FFF;}
+.header > .navbar li.active > a:visited{background-color: #409EFF !important; color:#FFF;}
+.header > .navbar li.active > a:active{background-color: #409EFF !important; color:#FFF;}
+.header > .navbar li.active > a:focus{background-color: #409EFF !important; color:#FFF;}
 
 /* contents common */
 .contents{max-width: 1200px; margin:0 auto; padding:20px;}
@@ -23,7 +29,27 @@ footer {background:#FFF; color:#777;  border-top:1px solid #CCC;}
 footer .footer{max-width: 1200px; margin:0 auto; padding:20px;}
 footer.feat{position: fixed; bottom:0; width: 100%;}
 
+
+/* bootstrap override */
+.btn{border:0;}
+.btn-primary{background-color:#409EFF !important;}
+.btn-default{background-color:#BBB !important; color:#FFF;}
+.btn-default:hover{color:#FFF;}
+.btn-default:focus{color:#FFF;}
+
+.panel .panel-heading{color:#409EFF; font-weight: bold; font-size: 14px}
+
+.table th, .table td{text-align: center !important; vertical-align: middle !important;}
+
+.modal-header .close{margin-top:-23px !important;}
+
+
+
+/* contents */
 .description{color:#AAA;}
+
+.login a{color:#FFF;}
+.login a:hover{color:#FFF;}
 
 .user-type{max-width: 600px; margin:0 auto; color:#AAA;}
 .user-type .fas{font-size:30px; color:#67C23A;}
@@ -39,4 +65,43 @@ footer.feat{position: fixed; bottom:0; width: 100%;}
 
 .menuscript-form{border:1px solid #EFEFEF; padding:30px 20px; margin-top:20px; line-height: 22px}
 
-.step{text-align: center; border-bottom: 1px solid #efefef; padding-bottom: 20px; margin-bottom: 20px;}
+.step{text-align: center; border-bottom: 1px solid #efefef; font-size: 14px; margin-bottom: 20px;}
+.step ul li{margin-bottom: 20px}
+.step ul li .on{color:#67C23A; font-weight: bold}
+
+.bootstrap-tagsinput{width: 100%}
+.bootstrap-tagsinput .tag{background-color:#67C23A;}
+
+.validate{color:#F56C6C;}
+
+.table-container{overflow-x: auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

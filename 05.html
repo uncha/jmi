@@ -3,12 +3,14 @@
 <head>
 	<title>JMI</title>
 	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-tagsinput/bootstrap-tagsinput.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./common/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="./common/css/spacing.css" />
 	<link rel="stylesheet" type="text/css" href="./common/css/common.css" />
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="./common/libs/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./common/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -22,7 +24,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">JMI</a>
+		      <a class="navbar-brand" href="index.html">JMI</a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -46,61 +48,32 @@
 		<div class="menuscript-form">
 			<div class="step">
 				<ul class="row">
-					<li class="col-sm-2">Step 1<br />Basic Information</li>
-					<li class="col-sm-2">Step 1<br />Basic Information</li>
-					<li class="col-sm-2">Step 1<br />Basic Information</li>
-					<li class="col-sm-2">Step 1<br />Basic Information</li>
-					<li class="col-sm-2">Step 1<br />Basic Information</li>
-					<li class="col-sm-2">Step 1<br />Basic Information</li>
+					<li class="col-sm-2"><a class="on" href="#">Step 1<br />Basic Information</a></li>
+					<li class="col-sm-2"><a href="#">Step 2<br />Author Information</a></li>
+					<li class="col-sm-2"><a href="#">Step 3<br />Reviewers</a></li>
+					<li class="col-sm-2"><a href="#">Step 4<br />Details &amp; Comments</a></li>
+					<li class="col-sm-2"><a href="#">Step 5<br />File Upload</a></li>
+					<li class="col-sm-2"><a href="#">Step 6<br />Review &amp; Submit</a></li>
 				</ul>
 			</div>
 			<div>
 				<form class="form-horizontal">
 					<div class="form-group">
-				    <label for="inputTrack" class="col-sm-2 control-label">Track</label>
+				    <label for="track" class="col-sm-2 control-label"><i class="validate">*</i> Track</label>
 				    <div class="col-sm-10">
 				      <label class="radio-inline">
-							  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+							  <input type="radio" name="track" id="regular" value="Regular"> Regular
 							</label>
 							<label class="radio-inline">
-							  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-							</label>
-							<label class="radio-inline">
-							  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+							  <input type="radio" name="track" id="special-issue" value="Special Issue"> Special Issue
 							</label>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				    <label for="field" class="col-sm-2 control-label"><i class="validate">*</i> Field</label>
 				    <div class="col-sm-10">
-				      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				    <div class="col-sm-10">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-				    <div class="col-sm-10">
-				      <label class="checkbox-inline">
-							  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-							</label>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				    <div class="col-sm-10">
-				      <textarea class="form-control" rows="3"></textarea>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				    <div class="col-sm-10">
-				      <select class="form-control">
-							  <option>1</option>
+				      <select id="field" class="form-control">
+							  <option>Please Select</option>
 							  <option>2</option>
 							  <option>3</option>
 							  <option>4</option>
@@ -109,8 +82,66 @@
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" class="btn btn-default">Sign in</button>
+				    <label for="type" class="col-sm-2 control-label"><i class="validate">*</i> Type</label>
+				    <div class="col-sm-10">
+				      <select id="type" class="form-control">
+							  <option>Please Select</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							</select>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="invited-manuscript" class="col-sm-2 control-label">Invited Manuscript </label>
+				    <div class="col-sm-10">
+				      <label class="checkbox-inline">
+							  <input type="checkbox" id="invited-manuscript" value="checked"> If it is an invited manuscript, please check it. 
+							</label>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="title" class="col-sm-2 control-label"><i class="validate">*</i> Title</label>
+				    <div class="col-sm-10">
+				      <textarea placeholder="Title" id="title" class="form-control" rows="3"></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="password" class="col-sm-2 control-label">Running Head</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" id="password" placeholder="Running Head">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="abstract" class="col-sm-2 control-label"><i class="validate">*</i> Abstract</label>
+				    <div class="col-sm-10">
+				      <textarea placeholder="Abstract" id="abstract" class="form-control" rows="10"></textarea>
+				      <p class="text-right mt5">0 / <span style="color:#409EFF">250</span></p>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="keywords" class="col-sm-2 control-label"><i class="validate">*</i> Keywords</label>
+				    <div class="col-sm-10">
+				    	<input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" />
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="language" class="col-sm-2 control-label"><i class="validate">*</i> Language of Manuscript</label>
+				    <div class="col-sm-10">
+				      <select id="language" class="form-control">
+							  <option>Please Select</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							</select>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10 text-right">
+				      <button type="submit" class="btn btn-default"><i class="fas fa-arrow-circle-left"></i> Save &amp; Go Back</button>
+				      <button type="submit" class="btn btn-primary">Save &amp; Continue <i class="fas fa-arrow-circle-right"></i></button>
 				    </div>
 				  </div>
 				</form>
