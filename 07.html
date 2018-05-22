@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JMI</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./common/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="./common/css/spacing.css" />
+	<link rel="stylesheet" type="text/css" href="./common/css/common.css" />
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./common/libs/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./common/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html">JMI</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Roles<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Manuscript Template<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Author Agreement<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Instructions &amp; Forms<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">COI<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Author Listings<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">My Profile<span class="sr-only">(current)</span></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<section class="contents">
+		<div class="row status">
+			<div class="col-sm-12 location"><a href="#">Journal Home</a> / <a href="#">Author</a> / <a href="#">Submit New Manuscript</a></div>
+		</div>
+		<div class="menuscript-form">
+			<div class="step">
+				<ul class="row">
+					<li class="col-sm-2"><a class="on" href="#">Step 1<br />Basic Information</a></li>
+					<li class="col-sm-2"><a class="on" href="#">Step 2<br />Author Information</a></li>
+					<li class="col-sm-2"><a class="on" href="#">Step 3<br />Reviewers</a></li>
+					<li class="col-sm-2"><a href="#">Step 4<br />Details &amp; Comments</a></li>
+					<li class="col-sm-2"><a href="#">Step 5<br />File Upload</a></li>
+					<li class="col-sm-2"><a href="#">Step 6<br />Review &amp; Submit</a></li>
+				</ul>
+			</div>
+			<div>
+				<form class="form-horizontal">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Reviewers</div>
+					  <div class="panel-body">
+					    <div class="pb20">
+					      <label>
+								  <input type="checkbox" value="I will add a reviewer"> I will add a reviewer
+								</label>
+								<label class="ml10">
+								  <input type="checkbox" value="I will not add a reviewer"> I will not add a reviewer
+								</label>
+					    </div>
+						  <div class="table-container">
+						  	<table class="table table-border-top">
+							    <thead>
+							      <tr>
+							        <th>Reviewer Name</th>
+							        <th>Email</th>
+							        <th>Institution</th>
+							        <th>Preference</th>
+							        <th>Del</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>john@example.com</td>
+							        <td>Super admin</td>
+							        <td>0000-0001-6628-3507</td>
+							        <td>Severance hospital</td>
+							        <td><a href="#">Del</a></td>
+							      </tr>
+							      <tr>
+							        <td>john@example.com</td>
+							        <td>Super admin</td>
+							        <td>0000-0001-6628-3507</td>
+							        <td>Severance hospital</td>
+							        <td><a href="#">Del</a></td>
+							      </tr>
+							      <tr>
+							        <td>john@example.com</td>
+							        <td>Super admin</td>
+							        <td>0000-0001-6628-3507</td>
+							        <td>Severance hospital</td>
+							        <td><a href="#">Del</a></td>
+							      </tr>
+							    </tbody>
+							  </table>
+						  </div>
+						  <p class="mt30 mb20"><i class="validate">*</i> Entered Reviewers</p>
+						  <div class="table-container">
+						  	<table class="table table-border-top">
+							    <thead>
+							      <tr>
+							        <th>First/Given Name</th>
+							        <th>Last/Family Name</th>
+							        <th>Email</th>
+							        <th>Institution</th>
+							        <th>Preference</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td><input type="text" class="form-control" placeholder="First/Given Name"></td>
+							        <td><input type="text" class="form-control" placeholder="Last/Family Name"></td>
+							        <td><input type="text" class="form-control" placeholder="Email"></td>
+							        <td><input type="text" class="form-control" placeholder="Institution"></td>
+							        <td>
+							        	<select class="form-control">
+												  <option>Please Select</option>
+												  <option value="I recommend this Reviewer">I recommend this Reviewer</option>
+												  <option value="I oppose this Reviewer">I oppose this Reviewer</option>
+												</select>
+							        </td>
+							      </tr>
+							    </tbody>
+							  </table>
+							  <div class="text-right">
+							  	<button type="button" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Add Reviewers</button>
+							  </div>
+						  </div>
+					  </div>
+					</div>
+				</form>
+			</div>
+			<div class="buttons mt20 text-right">
+				<button type="submit" class="btn btn-default"><i class="fas fa-arrow-circle-left"></i> Save &amp; Go Back</button>
+		      <button type="submit" class="btn btn-primary">Save &amp; Continue <i class="fas fa-arrow-circle-right"></i></button>
+			</div>
+		</div>
+	</section>
+	<footer class="mt50">
+		<div class="footer text-center">
+			<p>Copyright (C) 2018. The Korean Society for Medical Mycology</p>
+ 			<p>Editor in Chief_ Jong Soo Choi, Email: <a href="mailto:jschoi@med.yu.ac.kr">jschoi@med.yu.ac.kr</a> Tel: <tel>+82-53-620-3160</tel></p>
+		</div>
+	</footer>
+</body>
+</html>

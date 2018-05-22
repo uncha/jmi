@@ -43,6 +43,9 @@ footer.feat{position: fixed; bottom:0; width: 100%;}
 
 .modal-header .close{margin-top:-23px !important;}
 
+.nav-tabs{position: relative;}
+.nav-tabs .active > a {font-weight: bold; color:#F56C6C !important;}
+
 
 
 /* contents */
@@ -52,6 +55,8 @@ footer.feat{position: fixed; bottom:0; width: 100%;}
 .login a:hover{color:#FFF;}
 
 .user-type{max-width: 600px; margin:0 auto; color:#AAA;}
+.user-type a{color:#AAA;}
+.user-type a:hover{color:#FFF;}
 .user-type .fas{font-size:30px; color:#67C23A;}
 
 .card ul li{padding:15px;}
@@ -75,10 +80,11 @@ footer.feat{position: fixed; bottom:0; width: 100%;}
 .validate{color:#F56C6C;}
 
 .table-container{overflow-x: auto;}
+.table-border-top{border-top:1px solid #EFEFEF;}
 
+.conflict-interest dt{background: #EFEFEF; padding:5px; margin-bottom:10px; font-weight: bold}
 
-
-
+.file-upload .form-group{border-bottom: 1px solid #DDD; padding-bottom: 15px; margin-left:0; margin-right: 0;}
 
 
 

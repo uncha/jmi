@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>JMI</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-tagsinput/bootstrap-tagsinput.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -97,6 +100,66 @@
 				</li>
 			</ul>
 		</div>
+		<div class="menuscript-form" style="background: #FFF">
+			<div class="table-container">
+	  		<table class="table">
+		  		<colgroup>
+		  			<col style="width:8%" />
+		  			<col style="width:12%" />
+		  			<col />
+		  			<col style="width:12%" />
+		  			<col style="width:12%" />
+		  			<col style="width:12%" />
+		  		</colgroup>
+			    <thead>
+			      <tr>
+			        <th>No</th>
+			        <th>Manuscript ID</th>
+			        <th>Title</th>
+			        <th>Received Date</th>
+			        <th>Submission</th>
+			        <th>Status</th>
+			        <th>Withdrawal</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			      	<td>1</td>
+			      	<td>J-18050201</td>
+			      	<td>
+			      		<div class="text-left">Cinical Burden of Primarily Misdiagnosed Tinea capitis: A  Comparactive Staticstical Analysis.</div>
+			      	</td>
+			      	<td>18-Jan-2018</td>
+			      	<td>1st</td>
+			      	<td>Submitted</td>
+			      	<td><a href="#" data-toggle="modal" data-target="#submission-withdrawal">Withdrawal</a></td>
+			      </tr>
+			      <tr>
+			      	<td>2</td>
+			      	<td>J-18050201</td>
+			      	<td>
+			      		<div class="text-left">test</div>
+			      	</td>
+			      	<td>18-Jan-2018</td>
+			      	<td>2nd</td>
+			      	<td>Review Requested</td>
+			      	<td>N/A</td>
+			      </tr>
+			      <tr>
+			      	<td>3</td>
+			      	<td>J-18050201</td>
+			      	<td>
+			      		<div class="text-left">test</div>
+			      	</td>
+			      	<td>18-Jan-2018</td>
+			      	<td>3rd</td>
+			      	<td>Under Review</td>
+			      	<td>N/A</td>
+			      </tr>
+			    </tbody>
+			  </table>
+	  	</div>
+		</div>
 	</section>
 	<footer class="mt50 feat">
 		<div class="footer text-center">
@@ -104,5 +167,26 @@
  			<p>Editor in Chief_ Jong Soo Choi, Email: <a href="mailto:jschoi@med.yu.ac.kr">jschoi@med.yu.ac.kr</a> Tel: <tel>+82-53-620-3160</tel></p>
 		</div>
 	</footer>
+
+	<div class="modal-container">
+		<div class="modal fade" id="submission-withdrawal" tabindex="-1" role="dialog" aria-labelledby="submission-withdrawal-label" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <h4 class="modal-title" id="submission-withdrawal-label">Manuscript submission withdrawal</h4>
+		      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        <span aria-hidden="true">&times;</span>
+		      </button>
+		    </div>
+		    <div class="modal-body">
+		    	<p>Will withdraw manuscript submission?</p>
+		    </div>
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close">No</button>
+		      <button type="button" class="btn btn-primary">Yes</button>
+		    </div>
+		  </div>
+		</div>
+	</div>
 </body>
 </html>

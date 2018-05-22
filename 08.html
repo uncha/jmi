@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JMI</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./common/libs/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./common/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="./common/css/spacing.css" />
+	<link rel="stylesheet" type="text/css" href="./common/css/common.css" />
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./common/libs/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./common/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html">JMI</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Roles<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Manuscript Template<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Author Agreement<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Instructions &amp; Forms<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">COI<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">Author Listings<span class="sr-only">(current)</span></a></li>
+		        <li class=""><a href="#">My Profile<span class="sr-only">(current)</span></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<section class="contents">
+		<div class="row status">
+			<div class="col-sm-12 location"><a href="#">Journal Home</a> / <a href="#">Author</a> / <a href="#">Submit New Manuscript</a></div>
+		</div>
+		<div class="menuscript-form">
+			<div class="step">
+				<ul class="row">
+					<li class="col-sm-2"><a class="on" href="#">Step 1<br />Basic Information</a></li>
+					<li class="col-sm-2"><a class="on" href="#">Step 2<br />Author Information</a></li>
+					<li class="col-sm-2"><a class="on" href="#">Step 3<br />Reviewers</a></li>
+					<li class="col-sm-2"><a class="on" href="#">Step 4<br />Details &amp; Comments</a></li>
+					<li class="col-sm-2"><a href="#">Step 5<br />File Upload</a></li>
+					<li class="col-sm-2"><a href="#">Step 6<br />Review &amp; Submit</a></li>
+				</ul>
+			</div>
+			<div>
+				<form class="form-horizontal">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Cover Letter</div>
+					  <div class="panel-body">
+					  	<div class="mb10">
+					  		<button type="button" class="btn btn-default btn-sm">Preview</button>
+					  		<button type="button" class="btn btn-default btn-sm">Ω Special Character</button>
+					  	</div>
+					  	<textarea placeholder="Cover Letter" class="form-control" rows="5"></textarea>
+					  </div>
+					</div>
+
+					<div class="panel panel-default">
+					  <div class="panel-heading">Funding</div>
+					  <div class="panel-body">
+					  	<p class="description">Is there funding to report for this submission? Please use the 'Add Funder' button below to add the names of all your funding sources.</p>
+					  	<div>
+					  		<label class="radio-inline">
+								  <input type="radio" name="track" value="Yes"> Yes
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="track" value="No"> No
+								</label>
+					  	</div>
+					  	<div class="mt20">
+					  		<p class="mb10">Funders</p>
+					  		<table class="table table-border-top">
+							    <thead>
+							      <tr>
+							        <th>Funder</th>
+							        <th>Grant/Award Number</th>
+							        <th>Del</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>Funders</td>
+							        <td>Grant/Award Number</td>
+							        <td><a href="#">Del</a></td>
+							      </tr>
+							      <tr>
+							        <td>Funders</td>
+							        <td>Grant/Award Number</td>
+							        <td><a href="#">Del</a></td>
+							      </tr>
+							      <tr>
+							        <td>Funders</td>
+							        <td>Grant/Award Number</td>
+							        <td><a href="#">Del</a></td>
+							      </tr>
+							    </tbody>
+							  </table>
+							  <div class="text-right">
+							  	<button type="button" data-toggle="modal" data-target="#add-funder" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Add Funder</button>
+							  </div>
+							  <label class="ml10">
+								  <input type="checkbox" value="checked"> Tick to confirm that this work has not been published in whole or in part, nor is it being considerer for publication elsewhere.
+								</label>
+					  	</div>
+					  </div>
+					</div>
+
+					<div class="panel panel-default conflict-interest">
+					  <div class="panel-heading">Conflict of Interest</div>
+					  <div class="panel-body">
+					  	<h4>DISCLOSURE FORM OF POTENTIAL CONFLICTS OF INTEREST</h4>
+					  	<dl class="mt20 pl20 pr20 row">
+					  		<dt class="">Section 1. Identifying Information</dt>
+					  		<dd class="col-md-4 pl0">
+					  			<p><label for="first-name" class="control-label">1. Given Name (First Name)</label></p>
+					  			<input type="text" class="form-control" id="first-name" placeholder="Given Name (First Name)">
+					  		</dd>
+					  		<dd class="col-md-4">
+					  			<p><label for="last-name" class="control-label">2. Surname (Last Name)</label></p>
+					  			<input type="text" class="form-control" id="last-name" placeholder="Surname (Last Name)">
+					  		</dd>
+					  		<dd class="col-md-4 pr0">
+					  			<p><label for="date" class="control-label">3. Date</label></p>
+					  			<input type="text" class="form-control" id="date" placeholder="Date">
+					  		</dd>
+					  		<dd>
+					  			<label for="date" class="control-label">4. Are you the corresponding author?</label>
+					  			<div>
+							  		<label class="radio-inline">
+										  <input type="radio" name="track" value="Yes"> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="track" value="No"> No
+										</label>
+							  	</div>
+					  		</dd>
+					  		<dd>
+					  			<label for="manuscript-title" class="control-label">5. Manuscript Title</label>
+					  			<input type="text" class="form-control" id="manuscript-title" placeholder="Manuscript Title">
+					  		</dd>
+					  		<dd>
+					  			<label for="identifying-number" class="control-label">6. Manuscript Identifying Number (if you know it)</label>
+					  			<input type="text" class="form-control" id="identifying-number" placeholder="Manuscript Identifying Number (if you know it)">
+					  		</dd>
+					  	</dl>
+					  	<dl class="pl5 pr5">
+					  		<dt class="mt30">Section 2. The Work Under Consideration for Publication</dt>
+					  		<dd>
+					  			<p>Did you or your institution at any time receive payment or services from a third party (government, commercial, private foundation, etc.) for any aspect of the submitted work (including but not limited to grants, data monitoring board, study design, manuscript preparation, statistical analysis, etc.)?<br /><br />Are there any relevant conflicts of interest?</p>
+					  			<div>
+							  		<label class="radio-inline">
+										  <input type="radio" name="track" value="Yes"> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="track" value="No"> No
+										</label>
+							  	</div>
+					  		</dd>
+					  	</dl>
+					  	<dl class="pl5 pr5">
+					  		<dt class="mt30">Section 3. Relevant financial activities outside the submitted work.</dt>
+					  		<dd>
+					  			<p>Place a check in the appropriate boxes in the table to indicate whether you have financial relationships (regardless of amount of compensation) with entities as described in the instructions. Use one line for each entity; add as many lines as you need by clicking the “Add +” box. You should report relationships that were present during the 36 months prior to publication. <br /><br />Are there any relevant conflicts of interest? </p>
+					  			<div>
+							  		<label class="radio-inline">
+										  <input type="radio" name="track" value="Yes"> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="track" value="No"> No
+										</label>
+							  	</div>
+					  		</dd>
+					  	</dl>
+					  	<dl class="pl5 pr5">
+					  		<dt class="mt30">Section 4. Intellectual Property--Patents &amp; Copyrights</dt>
+					  		<dd>
+					  			<p>Do you have any patents, whether planned, pending or issued, broadly relevant to the work?</p>
+					  			<div>
+							  		<label class="radio-inline">
+										  <input type="radio" name="track" value="Yes"> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="track" value="No"> No
+										</label>
+							  	</div>
+					  		</dd>
+					  	</dl>
+					  	<dl class="pl5 pr5">
+					  		<dt class="mt30">Section 5. Relationships not covered above</dt>
+					  		<dd>
+					  			<p>Are there other relationships or activities that readers could perceive to have influenced, or that give the appearance of potentially influencing, what you wrote in the submitted work?</p>
+					  			<div>
+							  		<label class="radio pl20">
+										  <input type="radio" name="track" value="Yes"> Yes, the following relationships/conditions/circumstances are present (explain below)
+										</label>
+										<label class="radio pl20">
+										  <input type="radio" name="track" value="No"> No other relationships/conditions/circumstances that present a potential conflict of interest
+										</label>
+							  	</div>
+							  	<p class="mt10 description">At the time of manuscript submission, this journal will ask authors to confirm and, if necessary, update their disclosure statements. On occasion, this journal may ask authors to disclose further information about reported relationships.</p>
+					  		</dd>
+					  	</dl>
+					  	<dl class="pl5 pr5">
+					  		<dt class="mt30">Section 6. Disclosure Statement</dt>
+					  		<dd>
+					  			<p>Based on the above disclosures, this form will automatically generate a disclosure statement, which will appear in the box below. <br /><br />Generate Disclosure Statement</p>
+					  			<textarea placeholder="Generate Disclosure Statement" class="form-control mt10" rows="4"></textarea>
+					  		</dd>
+					  	</dl>
+					  </div>
+					</div>
+
+				</form>
+			</div>
+			<div class="buttons mt20 text-right">
+				<button type="submit" class="btn btn-default"><i class="fas fa-arrow-circle-left"></i> Save &amp; Go Back</button>
+		      <button type="submit" class="btn btn-primary">Save &amp; Continue <i class="fas fa-arrow-circle-right"></i></button>
+			</div>
+		</div>
+	</section>
+	<footer class="mt50">
+		<div class="footer text-center">
+			<p>Copyright (C) 2018. The Korean Society for Medical Mycology</p>
+ 			<p>Editor in Chief_ Jong Soo Choi, Email: <a href="mailto:jschoi@med.yu.ac.kr">jschoi@med.yu.ac.kr</a> Tel: <tel>+82-53-620-3160</tel></p>
+		</div>
+	</footer>
+
+	<div class="modal-container">
+		<div class="modal fade" id="add-funder" tabindex="-1" role="dialog" aria-labelledby="add-funder-label" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <h4 class="modal-title" id="add-funder-label">Add Funder</h4>
+			      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        <span aria-hidden="true">&times;</span>
+			      </button>
+			    </div>
+			    <div class="modal-body">
+			    	<form class="form-horizontal">
+						  <div class="form-group">
+						    <label for="name" class="col-sm-2 control-label">Name</label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="name" placeholder="Name">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="award-number" class="col-sm-2 control-label">Grant/Award Number</label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="ward-number" placeholder="Grant/Award Number">
+						    </div>
+						  </div>
+						</form>
+			    </div>
+			    <div class="modal-footer">
+			      <button type="button" class="btn btn-default"><i class="fas fa-angle-left"></i> Clear</button>
+			      <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add Funder</button>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
