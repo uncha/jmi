@@ -70,9 +70,10 @@ footer.feat{position: fixed; bottom:0; width: 100%;}
 
 .menuscript-form{border:1px solid #EFEFEF; padding:30px 20px; margin-top:20px; line-height: 22px}
 
-.step{text-align: center; border-bottom: 1px solid #efefef; font-size: 14px; margin-bottom: 20px;}
+.step{box-sizing: border-box; text-align: center; font-size: 14px; margin-bottom: 20px;}
 .step ul li{margin-bottom: 20px}
 .step ul li .on{color:#67C23A; font-weight: bold}
+.step-cont{border-left: 1px solid #efefef; }
 
 .bootstrap-tagsinput{width: 100%}
 .bootstrap-tagsinput .tag{background-color:#67C23A;}
@@ -87,7 +88,9 @@ footer.feat{position: fixed; bottom:0; width: 100%;}
 .file-upload .form-group{border-bottom: 1px solid #DDD; padding-bottom: 15px; margin-left:0; margin-right: 0;}
 
 
-
+@media screen and (max-width:992px) {
+	.step-cont{border-left: 0; }
+}
 
 
 

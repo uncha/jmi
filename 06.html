@@ -48,120 +48,122 @@
 		<div class="row status">
 			<div class="col-sm-12 location"><a href="#">Journal Home</a> / <a href="#">Author</a> / <a href="#">Submit New Manuscript</a></div>
 		</div>
-		<div class="menuscript-form">
-			<div class="step">
+		<div class="menuscript-form row">
+			<div class="step col-md-2">
 				<ul class="row">
-					<li class="col-sm-2"><a class="on" href="#">Step 1<br />Basic Information</a></li>
-					<li class="col-sm-2"><a class="on" href="#">Step 2<br />Author Information</a></li>
-					<li class="col-sm-2"><a href="#">Step 3<br />Reviewers</a></li>
-					<li class="col-sm-2"><a href="#">Step 4<br />Details &amp; Comments</a></li>
-					<li class="col-sm-2"><a href="#">Step 5<br />File Upload</a></li>
-					<li class="col-sm-2"><a href="#">Step 6<br />Review &amp; Submit</a></li>
+					<li class="col-sm-12"><a class="on" href="#">Step 1<br />Basic Information</a></li>
+					<li class="col-sm-12"><a class="on" href="#">Step 2<br />Author Information</a></li>
+					<li class="col-sm-12"><a href="#">Step 3<br />Reviewers</a></li>
+					<li class="col-sm-12"><a href="#">Step 4<br />Details &amp; Comments</a></li>
+					<li class="col-sm-12"><a href="#">Step 5<br />File Upload</a></li>
+					<li class="col-sm-12"><a href="#">Step 6<br />Review &amp; Submit</a></li>
 				</ul>
 			</div>
-			<div class="panel panel-default">
-			  <div class="panel-heading">Submitting Agent</div>
-			  <div class="panel-body">
-			    <p class="form-title"><i class="validate">*</i> Agent Question</p>
-			    <div class="pl20 col-sm-10">
-			      <label class="radio">
-						  <input type="radio" name="track" id="regular" value="Author"><span style="width:120px; display: inline-block; font-weight: bold" class="value">Author</span> I, <span class="name">Dr. Jemin Kim</span>, am submitting this manuscript on behalf of myself and my co-authors.
-						</label>
-						<label class="radio">
-						  <input type="radio" name="track" id="special-issue" value="Submitting Agent"><span style="width:120px; display: inline-block; font-weight: bold" class="value">Submitting Agent</span> I, <span class="name">Dr. Jemin Kim</span>, am not an author on this menuscript. I am submitting this manuscript on behalf of an author.
-						</label>
-			    </div>
-			  </div>
-			</div>
-			<div class="panel panel-default">
-			  <div class="panel-heading">Authors</div>
-			  <div class="panel-body">
-			    <p class="form-title"><i class="validate">*</i> Selected Authors</p>
-			    <p class="description">논문작성에 참여한 저자들을 등록하고 각각의 롤을 지정해 주세요.<br />
-					저자 등록은 최초 논문 투고 시에만 등록이 가능하며 수정논문 제출 시부터는 저자추가 및 변경을 할 수 없습니다. </p>
-		      <p class="text-right">The progress of review process is sent by SMS and Email</p>
-		      <div class="table-container">
-		      	<table class="table table-bordered">
-					    <thead>
-					      <tr>
-					        <th></th>
-					        <th>Order</th>
-					        <th>Corresponding<br /> Author</th>
-					        <th>Name</th>
-					        <th>ORCID</th>
-					        <th>Institution</th>
-					        <th>Roles <a href="#" class="fas fa-question-circle"></a></th>
-					        <th>Del</th>
-					      </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td><a href="#"><i class="fas fa-arrows-alt-v"></i> Drag</a></td>
-					        <td>
-					        	<select  class="input-sm form-control">
-										  <option>1</option>
-										  <option>2</option>
-										  <option>3</option>
-										  <option>4</option>
-										  <option>5</option>
-										</select>
-					        </td>
-					        <td>john@example.com</td>
-					        <td>Super admin</td>
-					        <td>0000-0001-6628-3507</td>
-					        <td>Severance hospital</td>
-					        <td>
-					        	<select class="input-sm form-control">
-										  <option>select</option>
-										  <option>2</option>
-										  <option>3</option>
-										  <option>4</option>
-										  <option>5</option>
-										</select>
-					        </td>
-					        <td><a href="#">Del</a></td>
-					      </tr>
-					      <tr>
-					        <td><a href="#"><i class="fas fa-arrows-alt-v"></i> Drag</a></td>
-					        <td>
-					        	<select  class="input-sm form-control">
-										  <option>1</option>
-										  <option>2</option>
-										  <option>3</option>
-										  <option>4</option>
-										  <option>5</option>
-										</select>
-					        </td>
-					        <td>john@example.com</td>
-					        <td>Super admin</td>
-					        <td>0000-0001-6628-3507</td>
-					        <td>Severance hospital</td>
-					        <td>
-					        	<select class="input-sm form-control">
-										  <option>select</option>
-										  <option>2</option>
-										  <option>3</option>
-										  <option>4</option>
-										  <option>5</option>
-										</select>
-					        </td>
-					        <td><a href="#">Del</a></td>
-					      </tr>
-					    </tbody>
-					  </table>
-		      </div>
-		      <p>Add Author</p>
-		      <p class="description">Find using Author's email address</p>
-		      <p class="description">No co-author found. Please search again using another e-mail address or <a data-toggle="modal" data-target="#create-author" href="#" style="color:#409EFF">create a new co-author.</a></p>
-		      <div class="input-group col-md-6">
-					  <input type="email" class="form-control" placeholder="AuthorEmail@example.com" aria-describedby="basic-addon2">
-					  <a data-toggle="modal" data-target="#author-search" href="#" class="input-group-addon"><i class="fas fa-search"></i> Search</a>
-					</div>
-			  </div>
-			</div>
-			<div class="buttons mt20 text-right">
-				<button type="submit" class="btn btn-default"><i class="fas fa-arrow-circle-left"></i> Save &amp; Go Back</button>
-		      <button type="submit" class="btn btn-primary">Save &amp; Continue <i class="fas fa-arrow-circle-right"></i></button>
+			<div class="step-cont col-md-10">
+				<div class="panel panel-default">
+				  <div class="panel-heading">Submitting Agent</div>
+				  <div class="panel-body">
+				    <p class="form-title"><i class="validate">*</i> Agent Question</p>
+				    <div class="pl20 col-sm-10">
+				      <label class="radio">
+							  <input type="radio" name="track" id="regular" value="Author"><span style="width:120px; display: inline-block; font-weight: bold" class="value">Author</span> I, <span class="name">Dr. Jemin Kim</span>, am submitting this manuscript on behalf of myself and my co-authors.
+							</label>
+							<label class="radio">
+							  <input type="radio" name="track" id="special-issue" value="Submitting Agent"><span style="width:120px; display: inline-block; font-weight: bold" class="value">Submitting Agent</span> I, <span class="name">Dr. Jemin Kim</span>, am not an author on this menuscript. I am submitting this manuscript on behalf of an author.
+							</label>
+				    </div>
+				  </div>
+				</div>
+				<div class="panel panel-default">
+				  <div class="panel-heading">Authors</div>
+				  <div class="panel-body">
+				    <p class="form-title"><i class="validate">*</i> Selected Authors</p>
+				    <p class="description">논문작성에 참여한 저자들을 등록하고 각각의 롤을 지정해 주세요.<br />
+						저자 등록은 최초 논문 투고 시에만 등록이 가능하며 수정논문 제출 시부터는 저자추가 및 변경을 할 수 없습니다. </p>
+			      <p class="text-right">The progress of review process is sent by SMS and Email</p>
+			      <div class="table-container">
+			      	<table class="table table-bordered">
+						    <thead>
+						      <tr>
+						        <th></th>
+						        <th>Order</th>
+						        <th>Corresponding<br /> Author</th>
+						        <th>Name</th>
+						        <th>ORCID</th>
+						        <th>Institution</th>
+						        <th>Roles <a href="#" class="fas fa-question-circle"></a></th>
+						        <th>Del</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td><a href="#"><i class="fas fa-arrows-alt-v"></i> Drag</a></td>
+						        <td>
+						        	<select  class="input-sm form-control">
+											  <option>1</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+											</select>
+						        </td>
+						        <td>john@example.com</td>
+						        <td>Super admin</td>
+						        <td>0000-0001-6628-3507</td>
+						        <td>Severance hospital</td>
+						        <td>
+						        	<select class="input-sm form-control">
+											  <option>select</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+											</select>
+						        </td>
+						        <td><a href="#">Del</a></td>
+						      </tr>
+						      <tr>
+						        <td><a href="#"><i class="fas fa-arrows-alt-v"></i> Drag</a></td>
+						        <td>
+						        	<select  class="input-sm form-control">
+											  <option>1</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+											</select>
+						        </td>
+						        <td>john@example.com</td>
+						        <td>Super admin</td>
+						        <td>0000-0001-6628-3507</td>
+						        <td>Severance hospital</td>
+						        <td>
+						        	<select class="input-sm form-control">
+											  <option>select</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+											</select>
+						        </td>
+						        <td><a href="#">Del</a></td>
+						      </tr>
+						    </tbody>
+						  </table>
+			      </div>
+			      <p>Add Author</p>
+			      <p class="description">Find using Author's email address</p>
+			      <p class="description">No co-author found. Please search again using another e-mail address or <a data-toggle="modal" data-target="#create-author" href="#" style="color:#409EFF">create a new co-author.</a></p>
+			      <div class="input-group col-md-6">
+						  <input type="email" class="form-control" placeholder="AuthorEmail@example.com" aria-describedby="basic-addon2">
+						  <a data-toggle="modal" data-target="#author-search" href="#" class="input-group-addon"><i class="fas fa-search"></i> Search</a>
+						</div>
+				  </div>
+				</div>
+				<div class="buttons mt20 text-right">
+					<button type="submit" class="btn btn-default"><i class="fas fa-arrow-circle-left"></i> Save &amp; Go Back</button>
+			      <button type="submit" class="btn btn-primary">Save &amp; Continue <i class="fas fa-arrow-circle-right"></i></button>
+				</div>
 			</div>
 		</div>
 	</section>
